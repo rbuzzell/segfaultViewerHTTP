@@ -1,4 +1,0 @@
-  		</a>
-    </div>
-    <div id="collapseOne" class="accordion-body collapse in">
-      <div class="accordion-inner">
