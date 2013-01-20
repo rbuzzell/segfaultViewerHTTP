@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"ife",
+				"iframePdf"
+			],
+			[
+				"sr",
+				"script"
+			],
+			[
 				"rate",
 				"rateSal"
 			],
@@ -111,6 +119,86 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 4765,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "volume1-5.html",
+			"settings":
+			{
+				"buffer_size": 12183,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "volume6-10.html",
+			"settings":
+			{
+				"buffer_size": 8279,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "volume11-15.html",
+			"settings":
+			{
+				"buffer_size": 9790,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "volume16-20.html",
+			"settings":
+			{
+				"buffer_size": 8655,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "volume21-25.html",
+			"settings":
+			{
+				"buffer_size": 11898,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "volume26-30.html",
+			"settings":
+			{
+				"buffer_size": 13538,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "volume31-35.html",
+			"settings":
+			{
+				"buffer_size": 13538,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "volume36-40.html",
+			"settings":
+			{
+				"buffer_size": 12633,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "volume41-45.html",
+			"settings":
+			{
+				"buffer_size": 7261,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -136,6 +224,8 @@
 	},
 	"file_history":
 	[
+		"/home/ryan/Desktop/Segfault Archive/uploadNew.html",
+		"/home/ryan/Desktop/Segfault Archive/loremIpsum.html",
 		"/home/ryan/Dropbox/Programming/programmingWithCLasses/Lab 4/Commission.cpp",
 		"/home/ryan/Dropbox/Programming/programmingWithCLasses/Lab 4/testCommission.cpp",
 		"/home/ryan/Dropbox/Programming/programmingWithCLasses/Lab 4/Commission.h",
@@ -151,9 +241,7 @@
 		"/home/ryan/Desktop/Segfault Archive/volume11-15.html",
 		"/home/ryan/Desktop/Segfault Archive/volume6-10.html",
 		"/home/ryan/Desktop/Segfault Archive/index.html",
-		"/home/ryan/Desktop/Segfault Archive/uploadNew.html",
 		"/home/ryan/Desktop/Segfault Archive/admintools/partTwo.txt",
-		"/home/ryan/Desktop/Segfault Archive/loremIpsum.html",
 		"/home/ryan/Desktop/Segfault Archive/volume16.html",
 		"/home/ryan/Desktop/Segfault Archive/volume6.html",
 		"/home/ryan/Desktop/Segfault Archive/volume14.html",
@@ -275,8 +363,286 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 4765,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 630.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "volume1-5.html",
+					"settings":
+					{
+						"buffer_size": 12183,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1017,
+								1017
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 315.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "volume6-10.html",
+					"settings":
+					{
+						"buffer_size": 8279,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "volume11-15.html",
+					"settings":
+					{
+						"buffer_size": 9790,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "volume16-20.html",
+					"settings":
+					{
+						"buffer_size": 8655,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "volume21-25.html",
+					"settings":
+					{
+						"buffer_size": 11898,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "volume26-30.html",
+					"settings":
+					{
+						"buffer_size": 13538,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "volume31-35.html",
+					"settings":
+					{
+						"buffer_size": 13538,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "volume36-40.html",
+					"settings":
+					{
+						"buffer_size": 12633,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "volume41-45.html",
+					"settings":
+					{
+						"buffer_size": 7261,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
