@@ -82,12 +82,16 @@
 //		$bar[$i] = $volume;
 	//	if (!(in_array($volume, $segfault))){
 	$bar = array_unique($bar);
-	print_r($bar);
-	for ($a = 1; $a <= count($bar); $a++){				
+	$bar = array_values($bar);
+
+	for ($a = 0; $a <= count($bar); $a++){				
 		echo "<div class=\"accordion\" id=accoridion$a\"> \n";
 		echo "<div class=\"accordion-group\"> \n";
 		echo "<div class=\"accordion-heading\"> \n";
 		echo "<a class=\"accordion-toggle\" data-toggle=\"collapse\" data-parent=\"#accordion$a\" href=\"#accordion$a\"> \n";
+		echo "Volume $a";
+		echo "</a>";
+		echo "</div>";
 		for ($i = 0; $i <= 500; $i++){
 			$fizz = $segfault[$bar[$a]][$i];
 			if (!(!(is_int($fizz)))){
@@ -104,7 +108,7 @@
 						echo "<a href=\"segfaults\Volume%20$bar[$a],%20Issue%200$fizz.pdf\">Issue $fizz</a> </br>";
 					}
 					else{
-						echo "<a href=\"segfaults\Volume$20$bar[$a],%20Issue%20$fizz.pdf\">Issue $fizz</a> </br>";
+						echo "<a href=\"segfaults\Volume%20$bar[$a],%20Issue%20$fizz.pdf\">Issue $fizz</a> </br>";
 					}
 				}
 	
