@@ -65,12 +65,9 @@
 	$issue;
 	$segfault = array($volumeTwo, $issueTwo);
 	$volume;
-	$pastVolume = 0;
-	$numvolumes = 0;
 	$one = 0;
 	$foo = 0;
 	$bar;
-	$baz = 0;
 	echo "</br>";
 	foreach (glob($dir) as $filename){
 		$file[$one] =  $filename;
@@ -81,11 +78,9 @@
 		$bar[$i] = $volume;
 		$segfault[$volume][$issue] = $issue;
 		$foo++;
+		}
 //		$bar[$i] = $volume;
 	//	if (!(in_array($volume, $segfault))){
-	//	$bar($baz) = $volume;
-	//	$baz++;
-	//	echo $baz;
 	$bar = array_unique($bar);
 	print_r($bar);
 	for ($a = 1; $a <= count($bar); $a++){				
@@ -96,7 +91,6 @@
 		for ($i = 0; $i <= 500; $i++){
 			$fizz = $segfault[$bar[$a]][$i];
 			if (!(!(is_int($fizz)))){
-				echo "Lies hurt </br>";
 				if ($bar[$a] < 10){
 				if ($fizz < 10){
 						echo "<a href=\"segfaults\Volume%200$bar[$a],%20Issue%200$fizz.pdf\">Issue $fizz</a> </br>";		
@@ -120,7 +114,6 @@
 		echo "</div> \n";
 		echo "</div> \n";
 		echo "</div> \n";
-	}
 }	
 ?>
 
