@@ -85,39 +85,43 @@
 	$bar = array_values($bar);
 
 	for ($a = 0; $a <= count($bar); $a++){				
-		echo "<div class=\"accordion\" id=accoridion$a\"> \n";
+		$boo = $bar[$a];
+		echo "<div class=\"accordion\" id=accordion$a\"> \n";
 		echo "<div class=\"accordion-group\"> \n";
 		echo "<div class=\"accordion-heading\"> \n";
-		echo "<a class=\"accordion-toggle\" data-toggle=\"collapse\" data-parent=\"#accordion$a\" href=\"#accordion$a\"> \n";
-		echo "Volume $a";
+		echo "<a class=\"accordion-toggle\" data-toggle=\"collapse\" data-parent=\"#accordion$a\" href=\"#collapse$a\"> \n";
+		echo "<h4>Volume $boo</h4>";
 		echo "</a>";
 		echo "</div>";
+		echo "<div id=\"collapse$a\" class=\"accordion-body collapse in\">";
+		echo "<div class=\"accordion-inner\">";
 		for ($i = 0; $i <= 500; $i++){
 			$fizz = $segfault[$bar[$a]][$i];
 			if (!(!(is_int($fizz)))){
 				if ($bar[$a] < 10){
 				if ($fizz < 10){
-						echo "<a href=\"segfaults\Volume%200$bar[$a],%20Issue%200$fizz.pdf\">Issue $fizz</a> </br>";		
+						echo "<a href=\"segfaults\Volume%200$bar[$a],%20Issue%200$fizz.pdf\" target=\"iframePdf\">Issue $fizz</a> </br>";		
 					}
 					else{
-						echo "<a href=\"segfaults\Volume%200$bar[$a],%20Issue%20$fizz.pdf\">Issue $fizz</a> </br>";
+						echo "<a href=\"segfaults\Volume%200$bar[$a],%20Issue%20$fizz.pdf\" target=\"iframePdf\">Issue $fizz</a> </br>";
 					}
 				}
 				else{
 					if ($fizz < 10){
-						echo "<a href=\"segfaults\Volume%20$bar[$a],%20Issue%200$fizz.pdf\">Issue $fizz</a> </br>";
+						echo "<a href=\"segfaults\Volume%20$bar[$a],%20Issue%200$fizz.pdf\" target=\"iframePdf\">Issue $fizz</a> </br>";
 					}
 					else{
-						echo "<a href=\"segfaults\Volume%20$bar[$a],%20Issue%20$fizz.pdf\">Issue $fizz</a> </br>";
+						echo "<a href=\"segfaults\Volume%20$bar[$a],%20Issue%20$fizz.pdf\" target=\"iframePdf\">Issue $fizz</a> </br>";
 					}
 				}
 	
 			echo "</a> \n";
 				}
 		}
-		echo "</div> \n";
-		echo "</div> \n";
-		echo "</div> \n";
+		echo "</div>";
+		echo "</div>";
+		echo "</div>";
+		echo "</div>";
 }	
 ?>
 
