@@ -32,15 +32,7 @@
  
 			<!-- Be sure to leave the brand out there if you want it shown -->
 			<a class="brand" href="#">Segfault Archive</a>
-			<a href="volume1-5.html" class="btn btn-mini btn-inverse">Vol. 1 - 5</a>
-			<a href="volume6-10.html" class="btn btn-mini btn-inverse">Vol. 6 - 10</a>
-			<a href="volume11-15.html" class="btn btn-mini btn-inverse">Vol. 11 - 15</a>
-			<a href="volume16-20.html" class="btn btn-mini btn-inverse">Vol. 16 - 20</a>
-			<a href="volume21-25.html" class="btn btn-mini btn-inverse">Vol. 21 - 25</a>
-			<a href="volume26-30.html" class="btn btn-mini btn-inverse">Vol. 26 - 30</a>
-			<a href="volume31-35.html" class="btn btn-mini btn-inverse">Vol. 31 - 35</a>
-			<a href="volume36-40.html" class="btn btn-mini btn-inverse">Vol. 36 - 40</a>
-			<a href="volume41-45.html" class="btn btn-mini btn-inverse">Vol. 41 - 45</a>
+			<a href="segfaults.php" class="btn btn-mini btn-inverse">Segfault Archive</a>
 		 <!--	<a href="uploadNew.html" class="btn btn-mini btn-danger">Upload</a>-->
 		
  
@@ -58,73 +50,6 @@
 	<div class="span11 offset1">
 
 	<p style="text-align:left">If you have navigated to this page in error, you will not be able to accces any content without an active login to members.</br> As a note: all avilable content has been added. Unadded content is missing content. If you have access to any of the missing content, please email it to <a href="mailto:segfault@csh.rit.edu">segfault@csh.rit.edu</a></br>
-<?php
-	$dir = "segfaults/*.pdf";
-	$num = 0;
-	$file;
-	$issue;
-	$segfault = array($volumeTwo, $issueTwo);
-	$volume;
-	$one = 0;
-	$foo = 0;
-	$bar;
-	echo "</br>";
-	foreach (glob($dir) as $filename){
-		$file[$one] =  $filename;
-		$one++;
-	}
-	for ($i = 0; $i <= $one; $i++){
-		sscanf($file[$i],"segfaults/Volume %d, Issue %d.pdf",$volume,$issue);
-		$bar[$i] = $volume;
-		$segfault[$volume][$issue] = $issue;
-		$foo++;
-		}
-//		$bar[$i] = $volume;
-	//	if (!(in_array($volume, $segfault))){
-	$bar = array_unique($bar);
-	$bar = array_values($bar);
-
-	for ($a = 0; $a <= count($bar); $a++){				
-		$boo = $bar[$a];
-		echo "<div class=\"accordion\" id=accordion$a\"> \n";
-		echo "<div class=\"accordion-group\"> \n";
-		echo "<div class=\"accordion-heading\"> \n";
-		echo "<a class=\"accordion-toggle\" data-toggle=\"collapse\" data-parent=\"#accordion$a\" href=\"#collapse$a\"> \n";
-		echo "<h4>Volume $boo</h4>";
-		echo "</a>";
-		echo "</div>";
-		echo "<div id=\"collapse$a\" class=\"accordion-body collapse in\">";
-		echo "<div class=\"accordion-inner\">";
-		for ($i = 0; $i <= 500; $i++){
-			$fizz = $segfault[$bar[$a]][$i];
-			if (!(!(is_int($fizz)))){
-				if ($bar[$a] < 10){
-				if ($fizz < 10){
-						echo "<a href=\"segfaults\Volume%200$bar[$a],%20Issue%200$fizz.pdf\" target=\"iframePdf\">Issue $fizz</a> </br>";		
-					}
-					else{
-						echo "<a href=\"segfaults\Volume%200$bar[$a],%20Issue%20$fizz.pdf\" target=\"iframePdf\">Issue $fizz</a> </br>";
-					}
-				}
-				else{
-					if ($fizz < 10){
-						echo "<a href=\"segfaults\Volume%20$bar[$a],%20Issue%200$fizz.pdf\" target=\"iframePdf\">Issue $fizz</a> </br>";
-					}
-					else{
-						echo "<a href=\"segfaults\Volume%20$bar[$a],%20Issue%20$fizz.pdf\" target=\"iframePdf\">Issue $fizz</a> </br>";
-					}
-				}
-	
-			echo "</a> \n";
-				}
-		}
-		echo "</div>";
-		echo "</div>";
-		echo "</div>";
-		echo "</div>";
-}	
-?>
-
     </div>
 </div>
 			</p>
