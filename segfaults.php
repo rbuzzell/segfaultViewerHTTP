@@ -48,7 +48,7 @@
 
 <div class="span10">
 	<!--Body content-->
-	<iframe src="https://members.csh.rit.edu/segfault/Segfault%20-%20Volume%201,%20Issue%201.pdf" frameborder="0" name="iframePdf" width="100%"></iframe>
+	<iframe src="segfault/Volume%2001,%20Issue%2001.pdf" frameborder="0" name="iframePdf" width="100%"></iframe>
  	<!-- Le javascript
 	 ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
