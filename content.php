@@ -61,18 +61,18 @@
 			if (!(!(is_int($fizz)))){ //Verifies that the value of $fizz is an integer
 				if ($bar[$a] < 10){ 
 					if ($fizz < 10){
-						echo "<a href=\"segfaults\Volume%200$bar[$a],%20Issue%200$fizz.pdf\" target=\"iframePdf\">Issue $fizz</a> </br>";
+						echo "<a href=\"segfaults/Volume%200$bar[$a],%20Issue%200$fizz.pdf\" target=\"iframePdf\">Issue $fizz</a> </br>";
 					}
 					else{
-						echo "<a href=\"segfaults\Volume%200$bar[$a],%20Issue%20$fizz.pdf\" target=\"iframePdf\">Issue $fizz</a> </br>";
+						echo "<a href=\"segfaults/Volume%200$bar[$a],%20Issue%20$fizz.pdf\" target=\"iframePdf\">Issue $fizz</a> </br>";
 					}
 				}
 				else{
 					if ($fizz < 10){
-						echo "<a href=\"segfaults\Volume%20$bar[$a],%20Issue%200$fizz.pdf\" target=\"iframePdf\">Issue $fizz</a> </br>";
+						echo "<a href=\"segfaults/Volume%20$bar[$a],%20Issue%200$fizz.pdf\" target=\"iframePdf\">Issue $fizz</a> </br>";
 					}
 					else{
-						echo "<a href=\"segfaults\Volume%20$bar[$a],%20Issue%20$fizz.pdf\" target=\"iframePdf\">Issue $fizz</a> </br>";
+						echo "<a href=\"segfaults/Volume%20$bar[$a],%20Issue%20$fizz.pdf\" target=\"iframePdf\">Issue $fizz</a> </br>";
 					}
 				}
 				echo "</a> \n";
