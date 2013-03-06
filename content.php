@@ -21,31 +21,31 @@
 
 
 <?php
-	$dir = "segfaults/*.pdf";
-	$num = 0;
-	$file;
-	$issue;
-	$segfault = array($volumeTwo, $issueTwo);
-	$volume;
-	$one = 0;
-	$foo = 0;
-	$bar;
-	echo "</br>";
-	foreach (glob($dir) as $filename){
-		$file[$one] =  $filename;
+	$dir = "segfaults/*.pdf"; //Directory where the Segfaults are stored
+	$num = 0; // I forget
+	$file; // Holds all filenames as an array
+	$issue; //Varable for the regex function. This hold the issue number.
+	$segfault = array($volumeTwo, $issueTwo); //Multi dim. array that holds all volumes and issues.
+	$volume; // Variable for the regex function. Holds the volume number
+	$one = 0; //Total number of segfaults
+	$foo = 0; //I forget
+	$bar; //Array that later hold the volumes
+	echo "</br>"; //Spits a new line. I think this was was from testing and never removed. 
+	foreach (glob($dir) as $filename){ //Scans the directory specified by $dir for files matching the regex.
+		$file[$one] =  $filename;  //Assigns the filename to an array
 		$one++;
 	}
-	for ($i = 0; $i <= $one; $i++){
+	for ($i = 0; $i <= $one; $i++){ //Scan the $file array to pull the $volume and $ issue variables 
 		sscanf($file[$i],"segfaults/Volume %d, Issue %d.pdf",$volume,$issue);
 		$bar[$i] = $volume;
 		$segfault[$volume][$issue] = $issue;
 		$foo++;
 	}
-	$bar = array_unique($bar);
-	$bar = array_values($bar);
+	$bar = array_unique($bar); //removes duplicates from the $bar array
+	$bar = array_values($bar); //removes null variables from the array
 
-	$bar = array_reverse($bar);
-	for ($a = 0; $a < count($bar); $a++){
+	$bar = array_reverse($bar);//reverses the array
+	for ($a = 0; $a < count($bar); $a++){ //generate some mother fuckin' bootstrap
 		$boo = $bar[$a];
 		echo "<div class=\"accordion\" id=accordion$a\"> \n";
 		echo "<div class=\"accordion-group\"> \n";
@@ -56,10 +56,10 @@
 		echo "</div>";
 		echo "<div id=\"collapse$a\" class=\"accordion-body collapse\">";
 		echo "<div class=\"accordion-inner\">";
-		for ($i = 0; $i <= 500; $i++){
-			$fizz = $segfault[$bar[$a]][$i];
-			if (!(!(is_int($fizz)))){
-				if ($bar[$a] < 10){
+		for ($i = 0; $i <= 500; $i++){ //builds the issue listing. Has a hard cap of 500 issues. Should never be met in a real situation.
+			$fizz = $segfault[$bar[$a]][$i]; //assigns the value at the specified array locatoin to $fizz
+			if (!(!(is_int($fizz)))){ //Verifies that the value of $fizz is an integer
+				if ($bar[$a] < 10){ 
 					if ($fizz < 10){
 						echo "<a href=\"segfaults\Volume%200$bar[$a],%20Issue%200$fizz.pdf\" target=\"iframePdf\">Issue $fizz</a> </br>";
 					}
