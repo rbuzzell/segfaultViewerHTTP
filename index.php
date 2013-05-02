@@ -49,7 +49,7 @@
 <div class="row">
 	<div class="span11 offset1">
 
-	<p style="text-align:left">If you have navigated to this page in error, you will not be able to accces any content without an active login to members.</br> As a note: all avilable content has been added. Unadded content is missing content. If you have access to any of the missing content, please email it to <a href="mailto:segfault@csh.rit.edu">segfault@csh.rit.edu</a></br>
+	<p style="text-align:left">As a note: all avilable content has been added. Unadded content is missing content. If you have access to any of the missing content, please email it to <a href="mailto:segfault@csh.rit.edu">segfault@csh.rit.edu</a></br> <h6 style="text-align:center">Go ahead and click the "Segfault Archive" button up top to begin.</h6>
     </div>
 </div>
 			</p>
