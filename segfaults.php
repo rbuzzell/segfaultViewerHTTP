@@ -22,22 +22,29 @@
 			<![endif]-->
 </head>
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top">
-	<div class="navbar-inner">
-		<div class="container">
-		        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			</a>
-   		<!-- Be sure to leave the brand out there if you want it shown -->
-		<a class="brand" href="index.php">Segfault Archive</a>
-	        <a href="segfaults.php" class="btn btn-mini btn-primary">Segfault Archive</a>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">CSH SVG HERE</a>
+        </div>
 
-		<!--<a href="uploadNew.html" class="btn btn-mini btn-danger">Upload</a>-->
-		</div>
-	</div>
-</div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="index.php">Home</a></li>
+                <li  class="active"><a href="#">Segfaults <span class="sr-only">(current)</span></a></li>
+                <!--<li><a href="coredump.php">Coredump</a></li>-->
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
 
 <div class="container-fluid">
 <div class="row-fluid">
