@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0072)http://twitter.github.com/bootstrap/examples/starter-template.html#about -->
-<html lang="en" height="100%"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <title>CSH Segfault Viewer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,14 +14,14 @@
 				padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
 				}
 			</style>
-			<link href="css/bootstrap-responsive.css" rel="stylesheet">
+			<link href="css/bootstrap.css" rel="stylesheet">
 
 			<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 			<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 			<![endif]-->
 </head>
-<body height="100%">
+<body>
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container">
@@ -38,11 +38,10 @@
 		</div>
 	</div>
 </div>
-</div>
 
 <div class="container-fluid">
 <div class="row-fluid">
-<div class="span2" name="scroll" style="overflow: auto;">
+<div class="span2" style="overflow: auto;">
 <iframe src="content.php" frameborder="0" name"scroll" width="100%"></iframe>
 </div>
 
