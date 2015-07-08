@@ -29,10 +29,8 @@
 	<div class="navbar-inner">
 		<div class="container">
  
- 
-			<!-- Be sure to leave the brand out there if you want it shown -->
-			<a class="brand" href="#">Segfault Archive</a>
-			<a href="segfaults.php" class="btn btn-mini btn-inverse">Segfault Archive</a>
+
+			<a href="segfaults.php" class="btn btn-primary">Segfault Archive</a>
 		 <!--	<a href="uploadNew.html" class="btn btn-mini btn-danger">Upload</a>-->
 		
  
@@ -48,7 +46,7 @@
 <div class="row">
 	<div class="span11 offset1">
 
-	<p style="text-align:left">As a note: all available content has been added. Unadded content is missing content. If you have
+	<p style="text-align:center">As a note: all available content has been added. Unadded content is missing content. If you have
         access to any of the missing content, please email it to <a href="mailto:segfault@csh.rit.edu">segfault@csh.rit.edu</a><br>
         <h6 style="text-align:center">Go ahead and click the "Segfault Archive" button up top to begin.</h6>
     </div>
@@ -59,18 +57,7 @@
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="./js/jquery.js"></script>
-		<script src="./js/bootstrap-transition.js"></script>
-		<script src="./js/bootstrap-alert.js"></script>
-		<script src="./js/bootstrap-modal.js"></script>
-		<script src="./js/bootstrap-dropdown.js"></script>
-		<script src="./js/bootstrap-scrollspy.js"></script>
-		<script src="./js/bootstrap-tab.js"></script>
-		<script src="./js/bootstrap-tooltip.js"></script>
-		<script src="./js/bootstrap-popover.js"></script>
-		<script src="./js/bootstrap-button.js"></script>
-		<script src="./js/bootstrap-collapse.js"></script>
-		<script src="./js/bootstrap-carousel.js"></script>
-		<script src="./js/bootstrap-typeahead.js"></script>
+		<script src="./js/bootstrap.js"></script>
 
 	
 
