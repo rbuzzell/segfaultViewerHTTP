@@ -5,7 +5,7 @@
 		<title>CSH Segfault Viewer</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Viewer for the CSH Segfault History">
-		<meta name="author" content="Ryan Buzzell w/Bootstrap template">
+		<meta name="author" content="Ryan Buzzell">
 
 		<!-- Le styles -->
 		<link href="css/bootstrap.css" rel="stylesheet">
@@ -42,36 +42,35 @@
  
 		</div>
 	</div>
-</div>
 
 <h1 style="text-align:center">Welcome to the CSH @ RIT Segfault Archive</h1>
 	
 <div class="row">
 	<div class="span11 offset1">
 
-	<p style="text-align:left">As a note: all avilable content has been added. Unadded content is missing content. If you have access to any of the missing content, please email it to <a href="mailto:segfault@csh.rit.edu">segfault@csh.rit.edu</a></br> <h6 style="text-align:center">Go ahead and click the "Segfault Archive" button up top to begin.</h6>
+	<p style="text-align:left">As a note: all available content has been added. Unadded content is missing content. If you have
+        access to any of the missing content, please email it to <a href="mailto:segfault@csh.rit.edu">segfault@csh.rit.edu</a><br>
+        <h6 style="text-align:center">Go ahead and click the "Segfault Archive" button up top to begin.</h6>
     </div>
 </div>
-			</p>
-
-		</div> <!-- /container -->
+        <!-- /container -->
 
 		<!-- Le javascript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="./Bootstrap, from Twitter_files/jquery.js"></script>
-		<script src="./Bootstrap, from Twitter_files/bootstrap-transition.js"></script>
-		<script src="./Bootstrap, from Twitter_files/bootstrap-alert.js"></script>
-		<script src="./Bootstrap, from Twitter_files/bootstrap-modal.js"></script>
-		<script src="./Bootstrap, from Twitter_files/bootstrap-dropdown.js"></script>
-		<script src="./Bootstrap, from Twitter_files/bootstrap-scrollspy.js"></script>
-		<script src="./Bootstrap, from Twitter_files/bootstrap-tab.js"></script>
-		<script src="./Bootstrap, from Twitter_files/bootstrap-tooltip.js"></script>
-		<script src="./Bootstrap, from Twitter_files/bootstrap-popover.js"></script>
-		<script src="./Bootstrap, from Twitter_files/bootstrap-button.js"></script>
-		<script src="./Bootstrap, from Twitter_files/bootstrap-collapse.js"></script>
-		<script src="./Bootstrap, from Twitter_files/bootstrap-carousel.js"></script>
-		<script src="./Bootstrap, from Twitter_files/bootstrap-typeahead.js"></script>
+		<script src="./js/jquery.js"></script>
+		<script src="./js/bootstrap-transition.js"></script>
+		<script src="./js/bootstrap-alert.js"></script>
+		<script src="./js/bootstrap-modal.js"></script>
+		<script src="./js/bootstrap-dropdown.js"></script>
+		<script src="./js/bootstrap-scrollspy.js"></script>
+		<script src="./js/bootstrap-tab.js"></script>
+		<script src="./js/bootstrap-tooltip.js"></script>
+		<script src="./js/bootstrap-popover.js"></script>
+		<script src="./js/bootstrap-button.js"></script>
+		<script src="./js/bootstrap-collapse.js"></script>
+		<script src="./js/bootstrap-carousel.js"></script>
+		<script src="./js/bootstrap-typeahead.js"></script>
 
 	
 
