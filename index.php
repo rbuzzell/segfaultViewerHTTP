@@ -14,7 +14,6 @@
 				padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
 			}
 		</style>
-		<link href="css/bootstrap-responsive.css" rel="stylesheet">
 
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
@@ -25,21 +24,30 @@
 
 	<body>
 
-		<div class="navbar navbar-inverse navbar-fixed-top">
-	<div class="navbar-inner">
-		<div class="container">
- 
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">CSH SVG HERE</a>
+        </div>
 
-			<a href="segfaults.php" class="btn btn-primary">Segfault Archive</a>
-		 <!--	<a href="uploadNew.html" class="btn btn-mini btn-danger">Upload</a>-->
-		
- 
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="segfaults.php">Segfaults</a></li>
+                <!--<li><a href="coredump.php">Coredump</a></li>-->
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
 
-
-			</div>
- 
-		</div>
-	</div>
 
 <h1 style="text-align:center">Welcome to the CSH @ RIT Segfault Archive</h1>
 	
