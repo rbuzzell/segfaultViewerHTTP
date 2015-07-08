@@ -5,7 +5,7 @@
 <title>CSH Segfault Viewer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="CSH Segfault viewer">
-<meta name="author" content="Ryan Buzzell w/Bootstrap template">
+<meta name="author" content="Ryan Buzzell">
 
 	<!-- Le styles -->
 		<link href="css/bootstrap.css" rel="stylesheet">
@@ -52,19 +52,8 @@
  	<!-- Le javascript
 	 ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="./Bootstrap, from Twitter_files/jquery.js"></script>
-	<script src="./Bootstrap, from Twitter_files/bootstrap-transition.js"></script>
-	<script src="./Bootstrap, from Twitter_files/bootstrap-alert.js"></script>
-	<script src="./Bootstrap, from Twitter_files/bootstrap-modal.js"></script>
-	<script src="./Bootstrap, from Twitter_files/bootstrap-dropdown.js"></script>
-	<script src="./Bootstrap, from Twitter_files/bootstrap-scrollspy.js"></script>
-	<script src="./Bootstrap, from Twitter_files/bootstrap-tab.js"></script>
-	<script src="./Bootstrap, from Twitter_files/bootstrap-tooltip.js"></script>
-	<script src="./Bootstrap, from Twitter_files/bootstrap-popover.js"></script>
-	<script src="./Bootstrap, from Twitter_files/bootstrap-button.js"></script>
-	<script src="./Bootstrap, from Twitter_files/bootstrap-collapse.js"></script>
-	<script src="./Bootstrap, from Twitter_files/bootstrap-carousel.js"></script>
-	<script src="./Bootstrap, from Twitter_files/bootstrap-typeahead.js"></script>
+	<script src="./js/jquery.js"></script>
+	<script src="./js/bootstrap.js"></script>
 	<script>
 	$(window).load(function (){
 		console.log("test, bitches");
