@@ -62,12 +62,9 @@
 	<script src="js/bootstrap.js"></script>
 	<script>
 	$(window).load(function (){
-		console.log("test, bitches");
 		$("iframe").height($(window).height() - 85);
 		$("scroll").height($(window).height() - 85);
 	});
-	$(document).ready(function () {
-	console.log("testicles");
 	});
 	</script>
 	</body><style type="text/css"></style></html>
