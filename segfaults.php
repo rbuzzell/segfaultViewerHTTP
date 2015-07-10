@@ -60,7 +60,6 @@
         <script src="js/bootstrap.js"></script>
         <script>
             $(window).load(function (){
-                console.log(Math.floor($(window).height() * 0.95))
                 $("#pdfIFrame").height(Math.floor($(window).height() * 0.9));
                 $("#toc").height(Math.floor($(window).height() * 0.9));
             });
