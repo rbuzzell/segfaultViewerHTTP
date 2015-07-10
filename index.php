@@ -44,7 +44,7 @@
 </nav>
 
 
-<h1 style="text-align:center">Welcome to the CSH @ RIT Segfault Archive</h1>
+<h1 style="text-align:center">Welcome to the CSH Segfault Archive</h1>
 	
 <div class="row">
 	<div class="span11 offset1">
