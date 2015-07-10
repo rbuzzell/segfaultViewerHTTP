@@ -59,18 +59,18 @@
                 if (!(!(is_int($issueNum)))){ //Verifies that the value of $fizz is an integer
                     if ($volumeNum[$a] < 10){
                         if ($issueNum < 10){
-                            echo "<a href=\"segfaults/Volume%200$volumeNum[$a],%20Issue%200$issueNum.pdf\" target=\"iframePdf\">Issue $issueNum</a> </br>";
+                            echo "<a href=\"segfaults/Volume%200$volumeNum[$a],%20Issue%200$issueNum.pdf\" target=\"pdfIFrame\">Issue $issueNum</a> </br>";
                         }
                         else{
-                            echo "<a href=\"segfaults/Volume%200$volumeNum[$a],%20Issue%20$issueNum.pdf\" target=\"iframePdf\">Issue $issueNum</a> </br>";
+                            echo "<a href=\"segfaults/Volume%200$volumeNum[$a],%20Issue%20$issueNum.pdf\" target=\"pdfIFrame\">Issue $issueNum</a> </br>";
                         }
                     }
                     else{
                         if ($issueNum < 10){
-                            echo "<a href=\"segfaults/Volume%20$volumeNum[$a],%20Issue%200$issueNum.pdf\" target=\"iframePdf\">Issue $issueNum</a> </br>";
+                            echo "<a href=\"segfaults/Volume%20$volumeNum[$a],%20Issue%200$issueNum.pdf\" target=\"pdfIFrame\">Issue $issueNum</a> </br>";
                         }
                         else{
-                            echo "<a href=\"segfaults/Volume%20$volumeNum[$a],%20Issue%20$issueNum.pdf\" target=\"iframePdf\">Issue $issueNum</a> </br>";
+                            echo "<a href=\"segfaults/Volume%20$volumeNum[$a],%20Issue%20$issueNum.pdf\" target=\"pdfIFrame\">Issue $issueNum</a> </br>";
                         }
                     }
                     echo "</a> \n";
