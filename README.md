@@ -1,7 +1,7 @@
-segfaultViewerHTTP
+Segfault Viewer
 ==================
 
 Viewer for the CSH internal newspaper.
 
-Written in PHP so it can pull data from a directory containing all the PDFs.
-Written so that it can ignore that there are missing issues and volumes.
+Written to organize and present a directory containing all the PDFs.
+Written to ignore that there are missing issues and volumes.
