@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
-        <title>CSH Segfault Viewer</title>
+        <title>CSH Segfault</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="CSH Segfault viewer">
         <meta name="author" content="Ryan Buzzell">
@@ -58,18 +58,6 @@
         <script src="js/jquery-2.1.4.min.js"></script>
         <script src="js/jquery.responsiveiframe.js"></script>
         <script src="js/bootstrap.js"></script>
-        <script>
-            var ri = responsiveIframe();
-            ri.allowResponsiveEmbedding();
-        </script>
-        <script>
-            ;(function($){
-                $(function(){
-                    $('#pdfIFrame').responsiveIframe({ xdomain: '*'});
-                    $('#toc').responsiveIframe({ xdomain: '*'});
-                });
-            })(jQuery);
-        </script>
         <script>
             $(window).load(function (){
                 console.log(Math.floor($(window).height() * 0.95))
