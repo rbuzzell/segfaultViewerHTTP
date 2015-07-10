@@ -46,7 +46,7 @@
                 <div class="col-xs-2">
                     <iframe src="content.php" frameborder="0" id="toc" width="100%"></iframe>
                 </div>
-                <div class="col-md-10">
+                <div class="col-sm-10">
                     <iframe src="segfaults/Volume%2001,%20Issue%2001.pdf" frameborder="0" name="pdfIFrame" id="pdfIFrame" width="100%"></iframe>
                 </div>
             </div>
