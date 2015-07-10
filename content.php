@@ -44,15 +44,15 @@
         $volumeNum = array_reverse($volumeNum); //reverses the array
         for ($a = 0; $a < count($volumeNum); $a++){ //generate some bootstrap
             $boo = $volumeNum[$a];
-            echo "<div class=\"accordion\" id=accordion$a\"> \n";
-            echo "<div class=\"accordion-group\"> \n";
-            echo "<div class=\"accordion-heading\"> \n";
-            echo "<a class=\"accordion-toggle\" data-toggle=\"collapse\" data-parent=\"#accordion$a\" href=\"#collapse$a\"> \n";
-            echo "<h6>Volume $boo</h6>";
+            echo "<div class=\"panel-group\" id=accordion$a\"> \n";
+            echo "<div class=\"panel panel-default\"> \n";
+            echo "<div class=\"panel-heading\" role=\"tab\" id=\"heading$a\"> \n";
+            echo "<a class=\"collapsed\" role=\"button\" data-toggle=\"collapse\" data-parent=\"accordion$a\" href=\"collapse$a\" aria-expanded=\"true\" aria-controls=\"collapse$a\"> \n";
+            echo "<h6 class=\"panel-title\">Volume $boo</h6>";
             echo "</a>";
             echo "</div>";
-            echo "<div id=\"collapse$a\" class=\"accordion-body collapse\">";
-            echo "<div class=\"accordion-inner\">";
+            echo "<div id=\"collapse$a\" class=\"panel-collapse collapse in\" role=\"tabpanel\" aria-labelledby=\"heading$a\">";
+            echo "<div class=\"panel-body\">";
             for ($i = 0; $i <= 500; $i++){ //builds the issue listing. Has a hard cap of 500 issues. Should never be met in a real situation.
                 $issueNum = $segfault[$volumeNum[$a]][$i]; //assigns the value at the specified array location to issueNum
 
