@@ -40,36 +40,51 @@
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
-        
+
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-2">
-                    <iframe src="content.php" frameborder="0" name="scroll" width="100%" id="toc">
+            <div class="row-fluid">
+                <div class="col-xs-2">
+                    <iframe src="content.php" frameborder="0" id="toc" width="100%"></iframe>
                 </div>
-                <div class="col-md-3">
-                    <iframe src="segfaults/Volume%2001,%20Issue%2001.pdf" frameborder="0" id="pdfIFrame"></iframe>
+                <div class="col-md-10">
+                    <iframe src="segfaults/Volume%2001,%20Issue%2001.pdf" frameborder="0" id="pdfIFrame" width="100%"></iframe>
                 </div>
             </div>
         </div>
+
+        <!-- Le javascript
+         ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/jquery.responsiveiframe.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script>
+            var ri = responsiveIframe();
+            ri.allowResponsiveEmbedding();
+        </script>
+        <script>
+            ;(function($){
+                $(function(){
+                    $('#pdfIFrame').responsiveIframe({ xdomain: '*'});
+                    $('#toc').responsiveIframe({ xdomain: '*'});
+                });
+            })(jQuery);
+        </script>
+        <script>
+            $(window).load(function (){
+                console.log(Math.floor($(window).height() * 0.95))
+                $("#pdfIFrame").height(Math.floor($(window).height() * 0.8));
+                $("#toc").height(Math.floor($(window).height() * 0.8));
+            });
+        </script>
+        <script>
+            $(window).resize(function (){
+                $("#pdfIFrame").height(Math.floor($(window).height() * 0.8));
+                $("#toc").height(Math.floor($(window).height() * 0.8));
+            });
+        </script>
     </body>
 
-    <!-- Le javascript
-     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/jquery.responsiveiframe.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script>
-        var ri = responsiveIframe();
-        ri.allowResponsiveEmbedding();
-    </script>
-    <script>
-        ;(function($){
-            $(function(){
-                $('#pdfIFrame').responsiveIframe({ xdomain: '*'});
-                $('#toc').responsiveIframe({ xdomain: '*'});
-            });
-        })(jQuery);
-    </script>
+
 
 </html>
