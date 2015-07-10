@@ -61,14 +61,14 @@
         <script>
             $(window).load(function (){
                 console.log(Math.floor($(window).height() * 0.95))
-                $("#pdfIFrame").height(Math.floor($(window).height() * 0.8));
-                $("#toc").height(Math.floor($(window).height() * 0.8));
+                $("#pdfIFrame").height(Math.floor($(window).height() * 0.9));
+                $("#toc").height(Math.floor($(window).height() * 0.9));
             });
         </script>
         <script>
             $(window).resize(function (){
-                $("#pdfIFrame").height(Math.floor($(window).height() * 0.8));
-                $("#toc").height(Math.floor($(window).height() * 0.8));
+                $("#pdfIFrame").height(Math.floor($(window).height() * 0.9));
+                $("#toc").height(Math.floor($(window).height() * 0.9));
             });
         </script>
     </body>
