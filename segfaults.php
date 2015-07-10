@@ -54,17 +54,23 @@
 
 <div class="span10">
 	<!--Body content-->
-	<iframe src="segfaults/Volume%2001,%20Issue%2001.pdf" frameborder="0" name="iframePdf" width="100%"></iframe>
+	<iframe src="segfaults/Volume%2001,%20Issue%2001.pdf" frameborder="0" name="iframePdf" width="100%" id="pdfIFrame"></iframe>
  	<!-- Le javascript
 	 ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.responsiveiframe.js"></script>
 	<script src="js/bootstrap.js"></script>
-	<script>
-	$(window).load(function (){
-		$("iframe").height($(window).height() - 85);
-		$("scroll").height($(window).height() - 85);
-	});
-	});
-	</script>
+    <script>
+        var ri = responsiveIframe();
+        ri.allowResponsiveEmbedding();
+    </script>
+    <script>
+        ;(function($){
+            $(function(){
+                $('#pdfIFrame').responsiveIframe({ xdomain: '*'});
+            });
+        })(jQuery);
+    </script>
+
 	</body><style type="text/css"></style></html>
