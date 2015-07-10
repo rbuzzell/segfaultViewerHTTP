@@ -39,47 +39,47 @@
             $segfault[$volume][$issue] = $issue;
             $foo++;
         }
+        echo "\n <div class=\"panel-group\" id=\"accordion\" role=\"tablist\" aria-multiselectable=\"true\"> \n";
         $volumeNum = array_unique($volumeNum); //removes duplicates from the $bar array
         $volumeNum = array_values($volumeNum); //removes null variables from the array
         $volumeNum = array_reverse($volumeNum); //reverses the array
-        for ($a = 0; $a < count($volumeNum); $a++){ //generate some bootstrap
+        for ($a = 0; $a < count($volumeNum); $a++){ //generate accordions
             $boo = $volumeNum[$a];
-            echo "<div class=\"panel-group\" id=accordion$a\"> \n";
-            echo "<div class=\"panel panel-default\"> \n";
-            echo "<div class=\"panel-heading\" role=\"tab\" id=\"heading$a\"> \n";
-            echo "<a class=\"collapsed\" role=\"button\" data-toggle=\"collapse\" data-parent=\"accordion$a\" href=\"collapse$a\" aria-expanded=\"true\" aria-controls=\"collapse$a\"> \n";
-            echo "<h6 class=\"panel-title\">Volume $boo</h6>";
-            echo "</a>";
-            echo "</div>";
-            echo "<div id=\"collapse$a\" class=\"panel-collapse collapse in\" role=\"tabpanel\" aria-labelledby=\"heading$a\">";
-            echo "<div class=\"panel-body\">";
+            echo "\n\n<div class=\"panel panel-default\"> \n";
+            echo "\t<div class=\"panel-heading\" role=\"tab\" id=\"heading$a\"> \n";
+            echo "\t\t<h6 class=\"panel-title\"> \n";
+            echo "\t\t\t<a class=\"collapsed\" role=\"button\" data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"collapse$a\" aria-expanded=\"true\" aria-controls=\"collapse$a\">Volume $boo</a>\n";
+            echo "\t\t</h6>\n";
+            echo "\t</div>\n";
+            echo "\t<div id=\"collapse$a\" class=\"panel-collapse collapse in\" role=\"tabpanel\" aria-labelledby=\"heading$a\">\n";
+            echo "\t\t<div class=\"list-group\">\n";
             for ($i = 0; $i <= 500; $i++){ //builds the issue listing. Has a hard cap of 500 issues. Should never be met in a real situation.
                 $issueNum = $segfault[$volumeNum[$a]][$i]; //assigns the value at the specified array location to issueNum
 
                 if (!(!(is_int($issueNum)))){ //Verifies that the value of $fizz is an integer
                     if ($volumeNum[$a] < 10){
                         if ($issueNum < 10){
-                            echo "<a href=\"segfaults/Volume%200$volumeNum[$a],%20Issue%200$issueNum.pdf\" target=\"pdfIFrame\">Issue $issueNum</a> </br>";
+                            echo "\t\t\t<a href=\"segfaults/Volume%200$volumeNum[$a],%20Issue%200$issueNum.pdf\" target=\"pdfIFrame\">Issue $issueNum</a> </br>";
                         }
                         else{
-                            echo "<a href=\"segfaults/Volume%200$volumeNum[$a],%20Issue%20$issueNum.pdf\" target=\"pdfIFrame\">Issue $issueNum</a> </br>";
+                            echo "\t\t\t<a href=\"segfaults/Volume%200$volumeNum[$a],%20Issue%20$issueNum.pdf\" target=\"pdfIFrame\">Issue $issueNum</a> </br>";
                         }
                     }
                     else{
                         if ($issueNum < 10){
-                            echo "<a href=\"segfaults/Volume%20$volumeNum[$a],%20Issue%200$issueNum.pdf\" target=\"pdfIFrame\">Issue $issueNum</a> </br>";
+                            echo "\t\t\t<a href=\"segfaults/Volume%20$volumeNum[$a],%20Issue%200$issueNum.pdf\" target=\"pdfIFrame\">Issue $issueNum</a> </br>";
                         }
                         else{
-                            echo "<a href=\"segfaults/Volume%20$volumeNum[$a],%20Issue%20$issueNum.pdf\" target=\"pdfIFrame\">Issue $issueNum</a> </br>";
+                            echo "\t\t\t<a href=\"segfaults/Volume%20$volumeNum[$a],%20Issue%20$issueNum.pdf\" target=\"pdfIFrame\">Issue $issueNum</a> </br>";
                         }
                     }
                     echo "</a> \n";
                 }
             }
-            echo "</div>";
-            echo "</div>";
-            echo "</div>";
-            echo "</div>";
+            echo "\t\t</div>\n";
+            echo "\t</div>\n";
+            echo "</div>\n";
+            // echo "</div>\n";
         }
     ?>
 
