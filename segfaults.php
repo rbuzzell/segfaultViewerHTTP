@@ -40,9 +40,9 @@
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
-
+        
         <div class="container-fluid">
-            <div class="row-fluid">
+            <div class="row">
                 <div class="col-md-2">
                     <iframe src="content.php" frameborder="0" name="scroll" width="100%" id="toc">
                 </div>
