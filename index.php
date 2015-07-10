@@ -19,7 +19,7 @@
 
 	<body>
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -47,11 +47,9 @@
 <h1 style="text-align:center">Welcome to the CSH Segfault Archive</h1>
 	
 <div class="row">
-	<div class="span11 offset1">
-
-	<p style="text-align:center">As a note: all available content has been added. Unadded content is missing content. If you have
-        access to any of the missing content, please email it to <a href="mailto:segfault@csh.rit.edu">segfault@csh.rit.edu</a><br>
-        <h6 style="text-align:center">Go ahead and click the "Segfault Archive" button up top to begin.</h6>
+	<div class="col-xs-12">
+	    <p style="text-align:center">As a note: all available content has been added. Unadded content is missing content. If you have
+            access to any of the missing content, please email it to <a href="mailto:segfault@csh.rit.edu">segfault@csh.rit.edu</a>
     </div>
 </div>
         <!-- /container -->
