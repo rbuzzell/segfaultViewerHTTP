@@ -17,8 +17,8 @@
         <![endif]-->
     </head>
     <body>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
+        <nav class="navbar navbar-inverse">
+            <div class="row body">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -42,17 +42,15 @@
         </nav>
 
         <div class="container-fluid">
-
-            <div class="row">
+            <div class="row-fluid">
                 <div class="col-md-2">
-                    <iframe src="content.php" frameborder="0" name"scroll" width="100%">
+                    <iframe src="content.php" frameborder="0" name="scroll" width="100%" id="toc">
                 </div>
-                <div class="col-md-8">
-                    <iframe src="segfaults/Volume%2001,%20Issue%2001.pdf" frameborder="0" name="iframePdf" width="100%" id="pdfIFrame"></iframe>
+                <div class="col-md-3">
+                    <iframe src="segfaults/Volume%2001,%20Issue%2001.pdf" frameborder="0" id="pdfIFrame"></iframe>
                 </div>
             </div>
         </div>
-
     </body>
 
     <!-- Le javascript
@@ -69,6 +67,7 @@
         ;(function($){
             $(function(){
                 $('#pdfIFrame').responsiveIframe({ xdomain: '*'});
+                $('#toc').responsiveIframe({ xdomain: '*'});
             });
         })(jQuery);
     </script>
