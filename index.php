@@ -2,7 +2,7 @@
 <!-- saved from url=(0072)http://twitter.github.com/bootstrap/examples/starter-template.html#about -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
-		<title>CSH Segfault Viewer</title>
+		<title>CSH Segfault</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Viewer for the CSH Segfault History">
 		<meta name="author" content="Ryan Buzzell">
