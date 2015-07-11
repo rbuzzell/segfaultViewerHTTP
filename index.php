@@ -29,7 +29,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">CSH SVG HERE</a>
+            <a class="navbar-brand" href="#" style="padding-left: 30px; padding-top: 10px;"><img src="img/csh_logo_white.svg"></a>
+            <a class="navbar-brand" href="#">Segfault Archive</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
