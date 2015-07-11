@@ -53,7 +53,7 @@
             echo "\t</div>\n";
             echo "\t<div id=\"collapse$a\" class=\"panel-collapse collapse in\" role=\"tabpanel\" aria-labelledby=\"heading$a\">\n";
             echo "\t\t<div class=\"list-group\">\n";
-            for ($i = 0; $i <= 500; $i++){ //builds the issue listing. Has a hard cap of 500 issues. Should never be met in a real situation.
+            for ($i = 0; $i <= 500; $i++){ //builds the issue listing. Has a hard cap of 500 issues per volume. Should never be met in a real situation.
                 $issueNum = $segfault[$volumeNum[$a]][$i]; //assigns the value at the specified array location to issueNum
 
                 if (!(!(is_int($issueNum)))){ //Verifies that the value of $fizz is an integer
